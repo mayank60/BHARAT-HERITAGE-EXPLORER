@@ -1,0 +1,10 @@
+{
+  "name": "Remix Bharat Heritage Explorer",
+  "description": "Bharat Heritage Explorer: Interactive Indian cultural heritage platform with map-based state exploration, GeoJSON boundaries, curated monuments, culture, cuisine, festivals, nearby geolocation, and quiz challenge.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

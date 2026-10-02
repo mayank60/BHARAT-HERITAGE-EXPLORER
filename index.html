@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bharat Heritage Explorer</title>
+    <meta name="description" content="Bharat Heritage Explorer: Interactive Indian cultural heritage platform with state-wise exploration, curated monuments, living traditions, art & crafts, languages, regional food, and ASI admin repository." />
+    <meta property="og:title" content="Bharat Heritage Explorer" />
+    <meta property="og:description" content="Bharat Heritage Explorer: Interactive Indian cultural heritage platform with state-wise exploration, curated monuments, living traditions, art & crafts, languages, regional food, and ASI admin repository." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Immediately enforce dark mode before DOM paint so light mode never flashes
+      try {
+        const savedTheme = localStorage.getItem('bharat_heritage_dark');
+        if (savedTheme !== 'false') {
+          document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = 'dark';
+        }
+      } catch (e) {
+        document.documentElement.classList.add('dark');
+      }
+      if (window.location.protocol === 'file:') {
+        window.location.replace('standalone.html');
+      }
+    </script>
+    <!-- Typography: Cinzel (Display) & Plus Jakarta Sans (Prose) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#FAF8F5] dark:bg-[#121110] text-[#1C1917] dark:text-[#EDE8E1] antialiased selection:bg-[#F3E8D7] selection:text-[#5C1D16]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
